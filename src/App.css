@@ -1,38 +1,126 @@
-.App {
+.App{
+  width: 90vw;
+  height: auto;
+  background-color: #505052;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 8px 9px 8px;
+  border-radius: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #202020; 
+  margin: 0; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  text-align: center;
+  padding-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header h1 {
+  margin-top: 10px;
+  font-size: 40px;
+  color: #e8ebed;
+  font-weight: bold;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  font-size: 20px;
+  color: #e8ebed;
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2c3e50;
+  padding: 6px;
+  display: block; 
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task {
+  background-color: #7c7c85;
+  padding: 10px;
+  margin-right: 30px;
+  border : 1px solid #202020;
+  overflow-x: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text span{
+  float: left;
+  font-weight: bolder;
+  
+}
+
+.task span {
+  color: #ffffff;
+}
+
+.icon{
+  float : right;
+  margin-right: 20px ;
+  padding: 2px;
+}
+span.icon-trash{
+  float : right;
+  margin-right: 20px ;
+  padding: 2px;
+  color: red;
+}
+span.icon-check{
+  float : right;
+  margin-right: 20px ;
+  padding: 2px;
+  color: green;
+}
+
+article{
+  display: grid;
+}
+
+.edit-todo{
+  width: 75%;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+input {
+  caret-color : rgb(243, 240, 240);
+}
+input:focus {
+  color : white;
+}
+
+.button{
+  margin: 15px 10px;
+  padding: 10px;
+  font-size: 12px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.button.selected{
+  color: #fff;
+  background-color: #6c6777;
+}
+
+.button.clear{
+  float: right;
+  color: #ffffff;
+  background-color:#ee1630 ;
+  width: 100px;
+}
+
+.textfield_label{
+  color: #fff !important;
 }
